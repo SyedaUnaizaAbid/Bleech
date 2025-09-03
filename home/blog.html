@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Blog - Bleech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/blog.css" />
+</head>
+
+<body>
+
+    <div class="pageWrapper">
+
+        <header class="mainHeader">
+            <nav class="flyComponent">
+                <div class="wrapper">
+                    <div class="container centerMaxWidthContainer">
+                        <a class="logo" href="https://bleech.de/en/">
+                            <svg width="100" height="30" viewBox="0 0 127 35">
+                                <path
+                                    d="M13.772 0H1.021L.99 33.605h13.15c7.133.006 10.699-3.163 10.699-9.506.005-3.957-1.594-6.55-4.798-7.78a7.356 7.356 0 0 0 3.016-2.846c.64-1.143.959-2.711.959-4.705 0-3.017-.849-5.233-2.545-6.647C19.775.707 17.208 0 13.772 0ZM6.463 4.717h7.012c3.335.003 5.005 1.557 5.01 4.662-.005 3.3-1.609 4.95-4.81 4.95H6.463V4.717Zm-.008 14.224h7.305a6.643 6.643 0 0 1 3.915 1.107c1.043.738 1.565 2.02 1.565 3.847.006 1.835-.44 3.128-1.34 3.877-.9.75-2.248 1.125-4.047 1.125H6.455V18.94ZM57.304 29.075l-1.375.144c-2.449.195-4.83.292-7.143.292-2.32-.002-3.904-.477-4.755-1.425-.852-.947-1.291-2.435-1.32-4.462h15.204l.343-3.818c.006-7.494-3.425-11.242-10.29-11.242-7.102-.002-10.653 4.344-10.653 13.04-.002 4.38.79 7.57 2.376 9.566 1.587 1.997 4.192 2.995 7.818 2.995a50.521 50.521 0 0 0 9.91-1.12l-.115-3.97Zm-5.46-14.652c.767.975 1.15 2.672 1.15 5.09H42.648c.034-2.336.468-4.01 1.302-5.023.834-1.012 2.168-1.518 4-1.518 1.83-.009 3.128.475 3.894 1.45ZM79.668 29.236l1.374-.148.094 3.975a50.44 50.44 0 0 1-9.905 1.12c-3.631 0-6.239-.999-7.823-2.995-1.583-1.997-2.374-5.181-2.37-9.553 0-8.697 3.55-13.043 10.65-13.04 6.87 0 10.3 3.745 10.292 11.237l-.344 3.818H66.43c.034 2.027.475 3.515 1.323 4.462.849.948 2.434 1.423 4.755 1.426a96.236 96.236 0 0 0 7.161-.302Zm-2.936-9.722c0-2.418-.383-4.115-1.15-5.09-.765-.976-2.065-1.459-3.897-1.447-1.829 0-3.16.505-3.996 1.514-.836 1.01-1.273 2.681-1.303 5.006l10.347.017Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M101.259 9.29a32.688 32.688 0 0 0-6.13-.691c-3.628-.009-6.245.958-7.851 2.901-1.607 1.943-2.41 5.204-2.41 9.782 0 4.576.758 7.87 2.274 9.884 1.516 2.014 4.139 3.02 7.869 3.02 2.505-.093 4.999-.386 7.457-.878l-.144-4.267-5.74.39c-2.579-.008-4.275-.598-5.09-1.769-.814-1.17-1.222-3.292-1.222-6.363-.002-3.077.422-5.17 1.273-6.278.851-1.109 2.52-1.663 5.006-1.663 1.244 0 3.156.132 5.735.395l.199-4.217-1.226-.246ZM118.525 8.616c-2.062 0-4.301.602-6.719 1.807V.11h-5.345l-.022 33.563h5.345V14.448l.785-.297a14.847 14.847 0 0 1 4.709-.78c1.798 0 2.975.557 3.529 1.671.554 1.114.837 2.994.848 5.638v12.997h5.333v-13.15c0-4.242-.594-7.292-1.782-9.15-1.188-1.858-3.415-2.778-6.681-2.761ZM28.526.056h5.345v33.562h-5.345V.056Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <ul class="menu">
+                            <li class="menu-item"><a class="menu-link" href="team.html"><span
+                                        class="menu-link-text">Team</span></a></li>
+                            <li class="menu-item"><a class="menu-link" href="service.html"><span
+                                        class="menu-link-text">Services</span></a></li>
+                            <li class="menu-item"><a class="menu-link" href="product.html"><span
+                                        class="menu-link-text">Products</span></a></li>
+                            <li class="menu-item"><a class="menu-link" href="podcast.html"><span
+                                        class="menu-link-text">Podcast</span></a></li>
+                            <li class="menu-item"><a class="menu-link" href="blog.html"><span
+                                        class="menu-link-text">Blog</span></a></li>
+                            <li class="menu-item"><a class="menu-link--button" href="contact.html"><span
+                                        class="menu-link-text">Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="mainContent" class="mainContent">
+            <article class="page-layout">
+
+                <div class="flyComponent">
+                    <div class="container centerMaxWidthContainer">
+                        <div class="box box--imageLeft">
+                            <div class="box-inner box-inner--image">
+
+                            </div>
+                            <div class="box-inner box-inner--content">
+                                <p class="subline"><span class="textBrand">Our Blog</span></p>
+                                <h1>Let's create a better
+                                    web together</h1>
+                                <p>
+                                    We love to learn and share our best practices from
+                                    over 10 years of developing and using WordPress.
+                                </p>
+                                <img src="images/blog.webp" alt="Blog Image" width="170%" height="550">
+                                <div class="obligation">
+                                    <h1 style=font-size:3rem>Obligation or opportunity? Why accessibility always wins.
+                                    </h1>
+                                    <p style="font-size:1.1rem">In June 2025 the European Accessibility Act (EAA) came
+                                        into
+                                        full effect, making web
+                                        accessibility a legal requirement for many businesses. But what does this mean
+                                        for
+                                        your website? And why is accessibility more than just a box to tick?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="section section-posts themeReset">
+        <div class="container centerMaxWidthContainer">
+            <ul class="posts">
+                <li class="post">
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/custom.webp" width="420" height="236">
+                        </a>
+                        <div class="post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    Custom 3D models in Mapbox: a step-by-step integration guide
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">Mapbox already offers great-looking 3D maps out of the
+                                box, but sometimes you need something more specific to tell your story. In
+                                this post, I show how I built and integrated a custom 3D model using
+                                Three.js to highlight a unique landmark and create a more immersive
+                                experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/interactive.webp" width="420" height="236">
+                        </a>
+                        <div class=" post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    If there was Astro for WordPress
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">Most developers will try to build their own tools and
+                                project boilerplates at some time in their career. And so did I, aiming for
+                                my ideal dev setup with bleeding edge technologies. This is my story of the
+                                struggles I faced along the way and how Flynt became my default choice for
+                                developing WordPress websites.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/align.webp" width="420" height="236">
+                        </a>
+                        <div class=" post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    The ups and downs of text-wrap: balance and a polyfill
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">
+                                Balancing text lines in a responsive layout used to be hard. But no longer! With
+                                text-wrap: balance, automatic text composition is coming to the browser. Learn its
+                                limitations, browser support, and get a first look at its new sibling, text-wrap:
+                                pretty.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/modal.webp" width="420" height="236">
+                        </a>
+                        <div class=" post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    Creating a modal using the dialog HTML element
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">
+                                Making modals used to be hard and complicated, not anymore! Things got a whole lot
+                                easier once the dialog element came into play. In this article you’ll learn how to
+                                create reusable modals with the native dialog HTML element.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/flynt.webp" width="420" height="236">
+                        </a>
+                        <div class=" post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    Introducing our Figma Design Kit for Flynt
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">
+                                At Bleech, we are thrilled to announce the release of our new Figma Design Kit for
+                                Flynt. This comprehensive toolkit is designed to empower designers and developers to
+                                create stunning layouts and components, while streamlining the web development process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="post-wrapper">
+                        <a class="figure-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                            <img src="images/experience.webp" width="420" height="236">
+                        </a>
+                        <div class=" post-inner">
+                            <h2 class="post-title h3 resetTitleLink">
+                                <a class="post-title-link" href="https://bleech.de/en/blog/custom-3d-models-in-mapbox/">
+                                    Flynt 2.0 - Redefining Performance and Experience
+                                </a>
+                            </h2>
+                            <p class="post-excerpt">
+                                The WordPress Starter Theme comes with a perfect Google PageSpeed score, WCAG 2.1
+                                accessibility, SEO best practices and an intuitive editing interface with Gutenberg
+                                support. It's now easier to develop custom themes faster - all while improving the user
+                                experience for your visitors and editors.</p>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- Footer -->
+                <footer class="footer-main text-light pt-5 pb-4">
+                    <div class="footer-container">
+                        <div class="footer-row">
+                            <!-- Left Column -->
+                            <div class="footer-col footer-logo-col">
+                                <a href="https://bleech.de/en/">
+                                </a>
+                                <p class="footer-desc">
+                                    Providing high-quality solutions for your business needs.<br>
+                                    Stay connected with us and get the latest updates.<br>
+                                    Join our community today.
+                                </p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="bi bi-youtube"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Right Columns -->
+                            <div class="footer-right-cols">
+                                <!-- Company -->
+                                <div class="footer-col">
+                                    <h5 class="footer-heading">Company</h5>
+                                    <ul class="footer-list">
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="podcast.html">Podcasts</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Services -->
+                                <div class="footer-col">
+                                    <h5 class="footer-heading">Services</h5>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Consulting</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">Design</a></li>
+                                        <li><a href="#">Marketing</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Newsletter -->
+                                <div class="footer-col footer-newsletter">
+                                    <h5 class="footer-heading">Newsletter</h5>
+                                    <p class="footer-newsletter-text">
+                                        Subscribe to our newsletter to get<br>
+                                        the latest updates directly in your inbox.<br>
+                                        Stay informed and never miss a thing.
+                                    </p>
+                                    <form class="footer-newsletter-form">
+                                        <input type="email" placeholder="Enter your email">
+                                        <button type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="footer-bottom text-center">
+                            &copy; 2025 Bleech. All rights reserved.
+                        </div>
+                    </div>
+                </footer>
+
+
+</body>
+
+</html>
